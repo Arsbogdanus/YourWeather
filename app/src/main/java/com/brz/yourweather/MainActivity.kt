@@ -17,14 +17,24 @@ class MainActivity : AppCompatActivity() {
         val condition = "Ясно"
         val humidity = "75%"
         val wind = "5 м/с"
+        val pressure = "1012 гПа"
+        val feelsLike = "23°C"
+        val dewPoint = "18°C"
+        val uv = "3"
 
         // Передача данных через Intent
+
         val intent = Intent(this, WeatherActivity::class.java).apply {
             putExtra("city", city)
             putExtra("temperature", temperature)
             putExtra("condition", condition)
             putExtra("humidity", humidity)
             putExtra("wind", wind)
+
+            putExtra("pressure", pressure)
+            putExtra("feelsLike", feelsLike)
+            putExtra("dewPoint", dewPoint)
+            putExtra("uv", uv)
         }
 
         startActivity(intent)

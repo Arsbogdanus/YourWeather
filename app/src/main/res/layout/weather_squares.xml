@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Первый ряд -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:weightSum="3"
+        android:gravity="center_horizontal">
+
+        <!-- Ветер -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Ветер"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/windText"
+                android:text="... м/с"
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Влажность -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Влажность"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/humidityText"
+                android:text="... %"
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Давление -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Давление"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/pressureText"
+                android:text="... гПа"
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <!-- Второй ряд -->
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center_horizontal">
+
+        <!-- Ощущается -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Ощущается"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/feelsLikeText"
+                android:text="... °C"
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- Точка росы -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="Т. росы"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/dewPointText"
+                android:text="... °C"
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <!-- УФ -->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            style="@style/WeatherSquareStyle">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:text="УФ"
+                style="@style/WeatherSquareTitle" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/uvText"
+                android:text="..."
+                style="@style/WeatherSquareValue" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
